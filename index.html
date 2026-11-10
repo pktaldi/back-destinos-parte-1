@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cadastro de destinos</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/post.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Cadastro de destinos</h1>
+      <p>Preencha os dados abaixo!!!</p>
+    </header>
+    <main>
+      <section>
+        <p><a href="pages/get.html">Consultar destinos</a></p>
+        <h2>Novo destino</h2>
+
+        <form id="form-destino">
+          <label for="title">Nome do destino: </label>
+          <input id="title" name="title" type="text" minlength="3" maxlength="120" required />
+
+          <label for="pais">País: </label>
+          <input id="pais" name="pais" type="text" required />
+
+          <label for="tipoDestino">Tipo do destino: </label>
+          <input id="tipoDestino" name="tipoDestino" type="text" required />
+
+          <label for="melhorEpoca">Melhor época para ir: </label>
+          <input id="melhorEpoca" name="melhorEpoca" type="text" required />
+
+          <label for="custoMedio">Custo médio: </label>
+          <input id="custoMedio" name="custoMedio" type="text" required />
+
+          <label for="imageUrl">URL da imagem (opcional): </label>
+          <input id="imageUrl" name="imageUrl" type="url" />
+
+          <button type="submit">Cadastrar destino</button>
+        </form>
+
+        <p id="resposta"></p>
+      </section>
+    </main>
+  </body>
+</html>

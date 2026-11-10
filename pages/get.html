@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/get.css">
+    <script src="../js/get.js" defer></script>
+    <title>Pedro Cataldi</title>
+
+</head>
+
+<body>
+    <header>
+        <h2>Lista de Destinos</h2>
+        <p>prática com GET: Buscar e Exibir os heróis da API do code verse</p>
+    </header>
+
+    <main>
+        <a href="../index.html">ir para o cadastro</a>
+        <section>
+            <h2>Destinos cadastrados irão aparecer automaticamente ao iniciar a página.</h2>
+            <p id="resposta"></p>
+            <ul id="lista-destinos"></ul>
+        </section>
+    </main>
+    
+    <template id="modelo-destino">
+        <li>
+            <section class="card-capa">
+                <img alt="">
+            </section>
+            <section class="card-conteudo">
+                <h3 class="local"></h3>
+                <p><strong>País: </strong><span class="pais">  </span></p>
+                <p><strong>Tipo do destino: </strong><span class="tipo">  </span></p>
+                <p><strong>Melhor época para ir: </strong><span class="epoca">  </span></p>
+                <p><strong>Custo médio: </strong>R$<span class="custo">  </span></p>
+            </section>
+        </li>
+    </template>
+</body>
+
+</html>
