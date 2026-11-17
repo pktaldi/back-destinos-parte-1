@@ -1,4 +1,3 @@
-//Manipulação - DOM
 const resposta = document.querySelector("#resposta");
 const lista = document.querySelector("#lista-destinos");
 const modelo = document.querySelector("#modelo-destino");
@@ -6,13 +5,10 @@ const modelo = document.querySelector("#modelo-destino");
 const apiKey="cv_SyGFypSXJOxuZXPEh1lG01-yPI_WZS1pa4II118zaaQLMfAdh0EVvJsJlbW0F81G";
 const apiUrl="https://api-ds.codeverse.dev.br/api/destinos";
 
-//Funcao que busca todos os herois da API
-
 async function buscarDestinos() {
   resposta.textContent = "Carregando os destinos..."
 
   try {
-    //Fazer uma requisicao GET para buscar os herois
     const retorno = await fetch(apiUrl, {
       method: "GET",
       headers: {"x-api-key": apiKey}
@@ -21,11 +17,7 @@ async function buscarDestinos() {
     if(!retorno.ok){
       throw new Error("Nao foi possivel buscar os destinos")
     }
-
-    //converter para JSON
     const resultado = await retorno.json();
-
-    //Percorrer todos os herois e montar o heroi.
 
     for (const destino of resultado.data) {
       const card = modelo.content.cloneNode(true);
@@ -57,6 +49,4 @@ async function buscarDestinos() {
   }
 
 }
-
-//executo a funcao
 buscarDestinos();

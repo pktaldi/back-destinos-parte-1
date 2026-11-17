@@ -56,7 +56,6 @@ button:disabled {
   margin-top: 20px;
 }
 
-/* Lista de destinos */
 #lista-destinos {
   display: flex;
   flex-wrap: wrap;
@@ -65,7 +64,6 @@ button:disabled {
   margin-top: 20px;
 }
 
-/* Card de cada destino */
 #lista-destinos li {
   flex: 1 1 260px;
   min-width: 0;
@@ -76,7 +74,6 @@ button:disabled {
   overflow: hidden;
 }
 
-/* Imagem do destino   */
 .card-capa {
   height: 220px;
   background-color: #dbeafe;
@@ -93,7 +90,6 @@ button:disabled {
   color: #334155;
 }
 
-/* Informações do herói */
 .card-conteudo {
   padding: 20px;
 }
