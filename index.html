@@ -17,20 +17,20 @@
         <h2>Novo destino</h2>
 
         <form id="form-destino">
-          <label for="title">Nome do destino: </label>
+          <label for="title">Nome do Destino: </label>
           <input id="title" name="title" type="text" minlength="3" maxlength="120" required />
 
           <label for="pais">País: </label>
-          <input id="pais" name="pais" type="text" required />
+          <input id="pais" name="pais" type="text" minlength="3" maxlength="120" required />
 
-          <label for="tipoDestino">Tipo do destino: </label>
-          <input id="tipoDestino" name="tipoDestino" type="text" required />
+          <label for="tipo_destino">Tipo de destino: </label>
+          <input id="tipo_destino" name="tipo_destino" type="text" required />
 
-          <label for="melhorEpoca">Melhor época para ir: </label>
-          <input id="melhorEpoca" name="melhorEpoca" type="text" required />
+          <label for="melhor_epoca">Melhor época para visitar: </label>
+          <input id="melhor_epoca" name="melhor_epoca" type="text" required />
 
-          <label for="custoMedio">Custo médio: </label>
-          <input id="custoMedio" name="custoMedio" type="text" required />
+          <label for="custo_medio">Custo médio da viagem: </label>
+          <input id="custo_medio" name="custo_medio" type="number" step="0.01" required />
 
           <label for="imageUrl">URL da imagem (opcional): </label>
           <input id="imageUrl" name="imageUrl" type="url" />

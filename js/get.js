@@ -3,7 +3,7 @@ const resposta = document.querySelector("#resposta");
 const lista = document.querySelector("#lista-destinos");
 const modelo = document.querySelector("#modelo-destino");
 
-const apiKey="cv_eA_cFlWmlv_WbxYCM7cCoZmmlNdT35JSaqLNbHKi3aMUpRWRbO59fC1KunRtdHCt";
+const apiKey="cv_SyGFypSXJOxuZXPEh1lG01-yPI_WZS1pa4II118zaaQLMfAdh0EVvJsJlbW0F81G";
 const apiUrl="https://api-ds.codeverse.dev.br/api/destinos";
 
 //Funcao que busca todos os herois da API

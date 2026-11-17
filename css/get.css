@@ -56,8 +56,8 @@ button:disabled {
   margin-top: 20px;
 }
 
-/* Lista de heróis */
-#form-destino {
+/* Lista de destinos */
+#lista-destinos {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -65,17 +65,18 @@ button:disabled {
   margin-top: 20px;
 }
 
-/* Card de cada herói */
-#modelo-destino li {
+/* Card de cada destino */
+#lista-destinos li {
   flex: 1 1 260px;
   min-width: 0;
+  max-width: 260px;
   background-color: #eff6ff;
   border: 1px solid #bfdbfe;
   border-radius: 8px;
   overflow: hidden;
 }
 
-/* Imagem do herói */
+/* Imagem do destino   */
 .card-capa {
   height: 220px;
   background-color: #dbeafe;
@@ -115,4 +116,3 @@ footer {
   text-align: center;
   padding: 20px;
 }
-
